@@ -19,3 +19,12 @@ for support on this repo goto
 
 https://discord.gg/ClientUser
 or open an issue ticket.
+
+
+## disclaimer
+
+The rename is VALID under the GPL licence 3.0
+https://www.gnu.org/licenses/gpl-3.0.en.html
+the source is based off ReMod.Core
+
+https://github.com/RequiDev/ReMod.Core/

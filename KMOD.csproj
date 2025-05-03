@@ -1,0 +1,157 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ProjectGuid>{8C3B1333-0287-4EA9-A65B-B903B0D2F3F0}</ProjectGuid>
+    <RootNamespace>KMod</RootNamespace>
+    <AssemblyName>KMod</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <VRChatPath>$(HOME)/.local/share/Steam/steamapps/common/VRChat</VRChatPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin/Debug/</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin/Release/</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- MelonLoader References -->
+    <Reference Include="Localization.LocalizableString">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/Localization.LocalizableString.dll</HintPath>
+    </Reference>
+    <Reference Include="Localization.StringFormatting">
+      <HintPath>.$(VRChatPath)/MelonLoader/Managed/Localization.StringFormatting.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>$(VRChatPath)/MelonLoader/MelonLoader.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(VRChatPath)/MelonLoader/0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- VRChat Core References -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRCCore-Standalone">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/VRCCore-Standalone.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRCSDKBase">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/VRCSDKBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRC.UI.Core">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/VRC.UI.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRC.UI.Elements">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/VRC.UI.Elements.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRC.UI.Shared">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/VRC.UI.Shared.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRC.Utility">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/VRC.Utility.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Il2Cpp References -->
+    <Reference Include="UnhollowerBaseLib">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/UnhollowerBaseLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnhollowerRuntimeLib">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/UnhollowerRuntimeLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/Il2Cppmscorlib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/Il2CppSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/Il2CppSystem.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Il2CppSystem.Data">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/Il2CppSystem.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Unity Engine References -->
+    <Reference Include="UnityEngine">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/UnityEngine.UIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/UnityEngine.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+
+    <!-- Additional References -->
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/Unity.TextMeshPro.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/Unity.InputSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Localization.Database">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/Localization.Database.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DataModel">
+      <HintPath>$(VRChatPath)/MelonLoader/Managed/DataModel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net48" Version="1.0.3" PrivateAssets="All" />
+  </ItemGroup>
+
+  <!-- Post-build event to copy the mod to VRChat MelonLoader Mods folder -->
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="mkdir -p &quot;$(VRChatPath)/Mods&quot;" Condition="Exists('$(VRChatPath)')" />
+    <Exec Command="cp &quot;$(TargetPath)&quot; &quot;$(VRChatPath)/Mods/&quot;" Condition="Exists('$(VRChatPath)')" />
+  </Target>
+</Project>

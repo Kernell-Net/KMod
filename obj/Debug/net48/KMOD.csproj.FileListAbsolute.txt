@@ -1,0 +1,9 @@
+/home/bluet/RiderProjects/KMOD/KMOD/bin/Debug/net48/Localization.LocalizableString.dll
+/home/bluet/RiderProjects/KMOD/KMOD/obj/Debug/net48/KMOD.csproj.AssemblyReference.cache
+/home/bluet/RiderProjects/KMOD/KMOD/obj/Debug/net48/KMOD.GeneratedMSBuildEditorConfig.editorconfig
+/home/bluet/RiderProjects/KMOD/KMOD/obj/Debug/net48/KMOD.csproj.CoreCompileInputs.cache
+/home/bluet/RiderProjects/KMOD/KMOD/obj/Debug/net48/KMOD.csproj.Up2Date
+/home/bluet/RiderProjects/KMOD/KMOD/bin/Debug/net48/KMod.dll
+/home/bluet/RiderProjects/KMOD/KMOD/bin/Debug/net48/KMod.pdb
+/home/bluet/RiderProjects/KMOD/KMOD/obj/Debug/net48/KMod.dll
+/home/bluet/RiderProjects/KMOD/KMOD/obj/Debug/net48/KMod.pdb

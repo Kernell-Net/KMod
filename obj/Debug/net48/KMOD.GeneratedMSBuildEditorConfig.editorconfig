@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = KMod
+build_property.ProjectDir = /home/bluet/RiderProjects/KMOD/KMOD/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
